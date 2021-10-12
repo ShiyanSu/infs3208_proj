@@ -10,7 +10,7 @@ services:
     depends_on:
         - db
     volumes:
-        - ./infs3200proj:/var/www/html/
+        - ./infs3200proj:/var/www/html/proj
     ports:
         - "8080:80"
     networks: 
