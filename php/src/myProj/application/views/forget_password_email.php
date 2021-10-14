@@ -15,7 +15,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-9 col-lg-8 mx-auto">
-            <?php echo form_open(base_url().'forget_password/check_code'); ?>
+            <?php echo form_open(base_url().'index.php/forget_password/check_code'); ?>
               <h3 class="login-heading mb-4">Verify your identity here!</h3>
               <form>
                 <div class="form-label-group">
@@ -29,7 +29,7 @@
                 
                 <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Submit</button>
                 <div class="text-center">
-                  <a class="small" href="<?php echo base_url(); ?>/login_new">Do not want to verify? Return Back</a>
+                  <a class="small" href="<?php echo base_url(); ?>/index.php/login_new">Do not want to verify? Return Back</a>
                 </div>
               </form>
 

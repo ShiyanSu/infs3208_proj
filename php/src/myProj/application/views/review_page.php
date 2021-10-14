@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url(); ?>home">Home</a>
+                        <a class="nav-link" href="<?php echo base_url(); ?>index.php/home">Home</a>
                     </li>
                     
                     <li class="nav-item dropdown">
@@ -37,23 +37,23 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url(); ?>review_upload">Post Review</a>
+                        <a class="nav-link" href="<?php echo base_url(); ?>index.php/review_upload">Post Review</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url(); ?>user_profile">Account <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="<?php echo base_url(); ?>index.php/user_profile">Account <span class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item">
                         <!-- <a class="nav-link" href="#">Sign In</a> -->
                         <?php if(!$this->session->userdata('logged_in')) : ?>
                             
-                                <a class="nav-link" href="<?php echo base_url(); ?>login_new"> Login </a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>index.php/login_new"> Login </a>
                             
                         <?php endif; ?>
                         <?php if($this->session->userdata('logged_in')) : ?>
                             
-                                <a class="nav-link" href="<?php echo base_url(); ?>login_new/logout"> Logout </a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>index.php/login_new/logout"> Logout </a>
                             
                         <?php endif; ?>
                     </li>
@@ -122,7 +122,7 @@
                 <p class="card-text">Liked by <?php echo $liked_times; ?> times.</p>
    
                 </div>
-                <?php echo form_open(base_url().'review_read/like_review'); ?>
+                <?php echo form_open(base_url().'index.php/review_read/like_review'); ?>
                 <form>
                 <div class="form-group">
                     <input type="hidden" name="review_id" value="<?php echo $review_id;?>">
@@ -137,7 +137,7 @@
 
             <?php if($wishlist_count == 0): ?>
 
-            <?php echo form_open(base_url().'review_read/add_wishlist'); ?>
+            <?php echo form_open(base_url().'index.php/review_read/add_wishlist'); ?>
                 <form>
                 <div class="form-group">
                     <input type="hidden" name="review_id" value="<?php echo $review_id;?>">
@@ -152,7 +152,7 @@
 
             <?php if($wishlist_count > 0): ?>
 
-            <?php echo form_open(base_url().'review_read/remove_wishlist'); ?>
+            <?php echo form_open(base_url().'index.php/review_read/remove_wishlist'); ?>
                 <form>
                 <div class="form-group">
                     <input type="hidden" name="review_id" value="<?php echo $review_id;?>">
@@ -167,7 +167,7 @@
             
             <br>
 
-            <?php echo form_open(base_url().'review_read/write_review'); ?>
+            <?php echo form_open(base_url().'index.php/review_read/write_review'); ?>
             <form>
             <!-- <div class="card mx-auto" style="width: 80%;"> -->
                 <div class="form-group">

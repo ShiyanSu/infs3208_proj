@@ -15,19 +15,19 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-            <a href="<?php echo base_url(); ?>login"> Home </a>
-            <a href="<?php echo base_url(); ?>upload"> Upload </a>
+            <a href="<?php echo base_url(); ?>index.php/login"> Home </a>
+            <a href="<?php echo base_url(); ?>index.php/upload"> Upload </a>
         </li>
     </ul>
     <ul class="navbar-nav my-lg-0">
     <?php if(!$this->session->userdata('logged_in')) : ?>
           <li class="nav-item">
-            <a href="<?php echo base_url(); ?>login"> Login </a>
+            <a href="<?php echo base_url(); ?>index.php/login"> Login </a>
           </li>
           <?php endif; ?>
           <?php if($this->session->userdata('logged_in')) : ?>
             <li class="nav-item">
-            <a href="<?php echo base_url(); ?>login/logout"> Logout </a>
+            <a href="<?php echo base_url(); ?>index.php/login/logout"> Logout </a>
            </li>
            <?php endif; ?>
     </ul>

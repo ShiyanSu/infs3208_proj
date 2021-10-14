@@ -47,12 +47,12 @@
                         <!-- <a class="nav-link" href="#">Sign In</a> -->
                         <?php if(!$this->session->userdata('logged_in')) : ?>
                             
-                                <a class="nav-link" href="<?php echo base_url(); ?>login_new"> Login </a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>index.php/login_new"> Login </a>
                             
                         <?php endif; ?>
                         <?php if($this->session->userdata('logged_in')) : ?>
                             
-                                <a class="nav-link" href="<?php echo base_url(); ?>login_new/logout"> Logout </a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>index.php/login_new/logout"> Logout </a>
                             
                         <?php endif; ?>
                     </li>
@@ -144,7 +144,7 @@
                                                 <p>wr</p>
                                             </div>
                                         </div>
-                                        <?php echo form_open(base_url().'user_profile_update/edit_profile'); ?>
+                                        <?php echo form_open(base_url().'index.php/user_profile_update/edit_profile'); ?>
                                         <form>
                                             <div class="form-label-group">
                                             <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email address" required>

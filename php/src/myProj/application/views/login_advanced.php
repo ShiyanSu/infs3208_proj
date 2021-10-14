@@ -21,7 +21,7 @@
 				</div>
 			</div>
 			<div class="card-body">
-				<?php echo form_open(base_url().'user_authentication /check_login');?>
+				<?php echo form_open(base_url().'index.php/user_authentication /check_login');?>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>

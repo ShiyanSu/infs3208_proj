@@ -20,7 +20,7 @@
                         <div class="row justify-content-center px-3 mb-3"> <img id="logo" src="https://i.imgur.com/PSXxjNY.png"> </div>
                         <h3 class="mb-5 text-center heading">We are Tidi</h3>
                         <h6 class="msg-info">Please login to your account</h6>
-                        <?php echo form_open(base_url().'login_advanced/check_login'); ?>
+                        <?php echo form_open(base_url().'index.php/login_advanced/check_login'); ?>
                         <div class="form-group"> <label class="form-control-label text-muted">Username</label> <input type="text" id="email" name="email" placeholder="Phone no or email id" class="form-control"> </div>
                         <div class="form-group"> <label class="form-control-label text-muted">Password</label> <input type="password" id="psw" name="psw" placeholder="Password" class="form-control"> </div>
                         <div class="row align-items-center remember">

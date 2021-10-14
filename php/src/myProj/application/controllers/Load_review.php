@@ -22,7 +22,7 @@ class load_review extends CI_Controller {
             $image_names = explode(';', $row['image_name']);
             
 
-            $output .=  form_open(base_url().'review_read').'<form> <div class="card mx-auto" style="width: 50rem;">
+            $output .=  form_open(base_url().'index.php/review_read').'<form> <div class="card mx-auto" style="width: 50rem;">
                         <div class="card-body"> <h5 class="card-title">'.'Title: '.$row['title'].'</h5>
                         <p class="card-text">'.'Review Content: '. $row['review'].'</p>
                         <p class="card-text">'.'Reviewer: '.$row['user_name'].'</p>

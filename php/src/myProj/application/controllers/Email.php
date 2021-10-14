@@ -46,10 +46,10 @@ class email extends CI_Controller
         if (get_cookie('email_verified') == $email_verification_code) {
             $user_name = $this->session->userdata('username');
             $this->user_data->verify_email($user_name);
-            redirect(base_url().'user_profile');
+            redirect(base_url().'index.php/user_profile');
            
         } else {
-            redirect(base_url().'user_profile');
+            redirect(base_url().'index.php/user_profile');
         }
     }
 

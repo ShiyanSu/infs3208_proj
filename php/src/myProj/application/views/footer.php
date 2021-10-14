@@ -37,7 +37,7 @@
                     //window.location.href = 'https://www.google.com';
                     $.ajax({
                         type: "POST",
-                        url: "<?php echo base_url(); ?>login_new/auto_logout",
+                        url: "<?php echo base_url(); ?>/index.php/login_new/auto_logout",
                         data: {},
                         //dataType: "json",
                         //cache: false,

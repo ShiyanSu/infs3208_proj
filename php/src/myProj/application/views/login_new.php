@@ -16,7 +16,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-9 col-lg-8 mx-auto">
-            <?php echo form_open(base_url().'login_new/check_login') ?>
+            <?php echo form_open(base_url().'index.php/login_new/check_login') ?>
               <h3 class="login-heading mb-4">Welcome back!</h3>
               <form>
                 <div class="form-label-group">
@@ -42,9 +42,9 @@
 					      </div>
                 <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
                 <div class="text-center">
-                  <a class="small" href="<?php echo base_url(); ?>/forget_password">Forgot password?</a>
+                  <a class="small" href="<?php echo base_url(); ?>/index.php/forget_password">Forgot password?</a>
                   <br>
-                  <a class="small" href="<?php echo base_url(); ?>/registration_new">Don't have an account? Create yours now.</a>
+                  <a class="small" href="<?php echo base_url(); ?>/index.php/registration_new">Don't have an account? Create yours now.</a>
                 </div>
                  
               </form>

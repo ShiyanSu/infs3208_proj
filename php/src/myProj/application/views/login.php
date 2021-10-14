@@ -1,6 +1,6 @@
 <div class="container">
       <div class="col-4 offset-4">
-			<?php echo form_open(base_url().'login/check_login'); ?>
+			<?php echo form_open(base_url().'index.php/login/check_login'); ?>
 				<h2 class="text-center">Login</h2>       
 					<div class="form-group">
 						<input type="text" class="form-control" placeholder="Username" required="required" name="username">

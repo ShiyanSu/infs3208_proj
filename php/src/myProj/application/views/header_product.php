@@ -35,23 +35,23 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url(); ?>review_upload">Post Review</a>
+                        <a class="nav-link" href="<?php echo base_url(); ?>index.php/review_upload">Post Review</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url(); ?>user_profile">Account</a>
+                        <a class="nav-link" href="<?php echo base_url(); ?>index.php/user_profile">Account</a>
                     </li>
 
                     <li class="nav-item">
                         <!-- <a class="nav-link" href="#">Sign In</a> -->
                         <?php if(!$this->session->userdata('logged_in')) : ?>
                             
-                                <a class="nav-link" href="<?php echo base_url(); ?>login_new"> Login </a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>index.php/login_new"> Login </a>
                             
                         <?php endif; ?>
                         <?php if($this->session->userdata('logged_in')) : ?>
                             
-                                <a class="nav-link" href="<?php echo base_url(); ?>login_new/logout"> Logout </a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>index.php/login_new/logout"> Logout </a>
                             
                         <?php endif; ?>
                     </li>

@@ -25,7 +25,7 @@
 							
 		<div class="white-panel">
 			<div class="login-show">
-                <?php echo form_open(base_url().'user_authentication/user_login'); ?>
+                <?php echo form_open(base_url().'index.php/user_authentication/user_login'); ?>
 				    <h2>LOGIN</h2>
 				    <input type="text" placeholder="Username" required="required" name="username">
 				    <input type="password" placeholder="Password" required="required" name="password">
@@ -34,7 +34,7 @@
                 <?php echo form_close(); ?>
 			</div>
 			<div class="register-show">
-                <?php echo form_open(base_url().'user_authentication/user_registration'); ?>
+                <?php echo form_open(base_url().'index.php/user_authentication/user_registration'); ?>
 				    <h2>REGISTER</h2>
                     <input type="text" placeholder="Email"  name="email_register">
 				    <input type="text" placeholder="Username" name="username_register">

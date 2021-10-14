@@ -48,12 +48,12 @@
                         <!-- <a class="nav-link" href="#">Sign In</a> -->
                         <?php if(!$this->session->userdata('logged_in')) : ?>
                             
-                                <a class="nav-link" href="<?php echo base_url(); ?>login_new"> Login </a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>index.php/login_new"> Login </a>
                             
                         <?php endif; ?>
                         <?php if($this->session->userdata('logged_in')) : ?>
                             
-                                <a class="nav-link" href="<?php echo base_url(); ?>login_new/logout"> Logout </a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>index.php/login_new/logout"> Logout </a>
                             
                         <?php endif; ?>
                     </li>

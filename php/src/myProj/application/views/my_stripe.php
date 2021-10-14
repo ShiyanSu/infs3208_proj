@@ -24,7 +24,7 @@
                     <div class="row display-tr" >
                         <h3 class="panel-title display-td" >Payment Details</h3>
                         <div class="display-td" >                            
-                            <img class="img-responsive pull-right" src="<?php echo base_url(); ?>uploads/logo-stripe.png">
+                            <img class="img-responsive pull-right" src="<?php echo base_url(); ?>index.php/uploads/logo-stripe.png">
                         </div>
                     </div>                    
                 </div>
@@ -37,7 +37,7 @@
                         </div>
                     <?php } ?>
      
-                    <form role="form" action="<?php echo base_url(); ?>stripeController/stripePost" method="post" class="require-validation"
+                    <form role="form" action="<?php echo base_url(); ?>index.php/stripeController/stripePost" method="post" class="require-validation"
                                                      data-cc-on-file="false"
                                                     data-stripe-publishable-key="<?php echo $this->config->item('stripe_key') ?>"
                                                     id="payment-form">
@@ -88,9 +88,9 @@
                             </div>
                         </div>
 
-                        <a href="<?php echo base_url(); ?>home">Go back to homepage</a>
-                        <a href="<?php echo base_url(); ?>pdf_receipt">Generate Receipt</a>
-                        <a href="http://www.facebook.com/sharer.php?u=<?php echo base_url();?>stripeController" target="_blank">share</a>
+                        <a href="<?php echo base_url(); ?>index.php/home">Go back to homepage</a>
+                        <a href="<?php echo base_url(); ?>index.php/pdf_receipt">Generate Receipt</a>
+                        <a href="http://www.facebook.com/sharer.php?u=<?php echo base_url();?>index.php/stripeController" target="_blank">share</a>
                              
                     </form>
                 </div>

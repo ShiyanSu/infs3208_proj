@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url(); ?>home">Home</a>
+                        <a class="nav-link" href="<?php echo base_url(); ?>index.php/home">Home</a>
                     </li>
                     
                     <li class="nav-item dropdown">
@@ -37,23 +37,23 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url(); ?>review_upload">Post Review</a>
+                        <a class="nav-link" href="<?php echo base_url(); ?>index.php/review_upload">Post Review</a>
                     </li>
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo base_url(); ?>user_profile">Account <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="<?php echo base_url(); ?>index.php/user_profile">Account <span class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item">
                         <!-- <a class="nav-link" href="#">Sign In</a> -->
                         <?php if(!$this->session->userdata('logged_in')) : ?>
                             
-                                <a class="nav-link" href="<?php echo base_url(); ?>login_new"> Login </a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>index.php/login_new"> Login </a>
                             
                         <?php endif; ?>
                         <?php if($this->session->userdata('logged_in')) : ?>
                             
-                                <a class="nav-link" href="<?php echo base_url(); ?>login_new/logout"> Logout </a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>index.php/login_new/logout"> Logout </a>
                             
                         <?php endif; ?>
                     </li>
@@ -126,11 +126,11 @@
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <a class="profile-edit-btn" href="<?php echo base_url(); ?>user_profile/edit">
+                        <a class="profile-edit-btn" href="<?php echo base_url(); ?>index.php/user_profile/edit">
                         Edit Profile
                         <!-- <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"> -->
                         </a>
-                        <?php echo form_open_multipart('user_profile/upload_user_image'); ?> 
+                        <?php echo form_open_multipart('index.php/user_profile/upload_user_image'); ?> 
                         <div class="form-group">
                             <input type="file" name="user_image" size="20" value="Change image" /> 
                         </div>
@@ -194,7 +194,7 @@
                                                 } else {
                                                     
                                                     echo 'No';
-                                                    $link = sprintf($href, base_url().'email');
+                                                    $link = sprintf($href, base_url().'index.php/email');
                                                     echo $link;
                                                 }
                                                 ?></p>

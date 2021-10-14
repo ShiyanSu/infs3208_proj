@@ -15,7 +15,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-9 col-lg-8 mx-auto">
-            <?php echo form_open(base_url().'email/check_code'); ?>
+            <?php echo form_open(base_url().'index.php/email/check_code'); ?>
               <h3 class="login-heading mb-4">Start your journey here!</h3>
               <form>
                 <div class="form-label-group">
@@ -29,7 +29,7 @@
                 
                 <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Submit</button>
                 <div class="text-center">
-                  <a class="small" href="<?php echo base_url(); ?>/user_profile">Do not want to verify? Return Back</a>
+                  <a class="small" href="<?php echo base_url(); ?>/index.php/user_profile">Do not want to verify? Return Back</a>
                 </div>
               </form>
 

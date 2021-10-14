@@ -37,7 +37,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url(); ?>home">Home </a>
+                        <a class="nav-link" href="<?php echo base_url(); ?>index.php/home">Home </a>
                     </li>
                     
                     <li class="nav-item dropdown">
@@ -53,23 +53,23 @@
                     </li>
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo base_url(); ?>review_upload">Post Review<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="<?php echo base_url(); ?>index.php/review_upload">Post Review<span class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url(); ?>user_profile">Account</a>
+                        <a class="nav-link" href="<?php echo base_url(); ?>index.php/user_profile">Account</a>
                     </li>
 
                     <li class="nav-item">
                         <!-- <a class="nav-link" href="#">Sign In</a> -->
                         <?php if(!$this->session->userdata('logged_in')) : ?>
                             
-                                <a class="nav-link" href="<?php echo base_url(); ?>login_new"> Login </a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>index.php/login_new"> Login </a>
                             
                         <?php endif; ?>
                         <?php if($this->session->userdata('logged_in')) : ?>
                             
-                                <a class="nav-link" href="<?php echo base_url(); ?>login_new/logout"> Logout </a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>index.php/login_new/logout"> Logout </a>
                             
                         <?php endif; ?>
                     </li>
@@ -92,7 +92,7 @@
         <br>
         <?php echo !empty($statusMsg)?'<p class="status-msg">'.$statusMsg.'</p>':''; ?>
         <div id="infor">
-        <?php echo form_open(base_url().'review_upload/post_text_review'); ?> 
+        <?php echo form_open(base_url().'index.php/review_upload/post_text_review'); ?> 
         
             <div class="form-group">
                 <label for="exampleInputPassword1">Review Title</label>
@@ -147,7 +147,7 @@ $("#img_up_bottom").click(function(){
 });
 
 $('#input_file').fileinput({
-        uploadUrl: "<?php echo base_url().'review_upload/p'?>",
+        uploadUrl: "<?php echo base_url().'index.php/review_upload/p'?>",
         
         maxFileCount: 5,
         showCaption: true,//是否显示被选文件的简介
