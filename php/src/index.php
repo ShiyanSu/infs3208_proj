@@ -1,3 +1,3 @@
 <?php
-    echo "Hello there, this is a PHP Apache container";
+    echo "this is a PHP Apache container";
 ?>
