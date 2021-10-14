@@ -30,7 +30,7 @@
                 <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Submit</button>
                 <div class="text-center">
                   
-                  <a class="small" href="<?php echo base_url(); ?>/index.php/login_new">Remember it? Go back to login.</a>
+                  <a class="small" href="<?php echo base_url(); ?>index.php/login_new">Remember it? Go back to login.</a>
                 </div>
               </form>
             <?php form_close(); ?>
