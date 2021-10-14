@@ -32,7 +32,7 @@
 
                 <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Save</button>
                 <div class="text-center">
-                  <a class="small" href="<?php echo base_url(); ?>/index.php/user_profile">Do not want to change? Go back to your profile.</a>
+                  <a class="small" href="<?php echo base_url(); ?>index.php/user_profile">Do not want to change? Go back to your profile.</a>
                 </div>
               </form>
 
