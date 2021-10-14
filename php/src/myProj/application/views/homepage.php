@@ -178,7 +178,7 @@ lazzy_loader(limit);
 function load_data(limit, start)
 {
   $.ajax({
-    url:"<?php echo base_url(); ?>load_review/fetch",
+    url:"<?php echo base_url(); ?>index.php/load_review/fetch",
     method:"POST",
     data:{limit:limit, start:start},
     cache: false,
