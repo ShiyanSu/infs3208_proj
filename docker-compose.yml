@@ -10,7 +10,7 @@ services:
     depends_on:
         - db
     volumes:
-        - ./php/src/:/var/www/html/
+        - ./php/src/myProj/:/var/www/html/
     ports:
         - "80:80"
     networks: 
