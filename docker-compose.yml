@@ -3,14 +3,14 @@ version: '3.8'
 services: 
   php-apache-environment:
     build:
-        context: ./php
-        dockerfile: Dockerfile
+        context: ./
+        dockerfile: Dockerfile.dockerfile
     container_name: php-apache
     restart: always
     depends_on:
         - db
     volumes:
-        - ./infs3200proj:/var/www/html/
+        - ./infs3200proj:/var/www/html/proj
     ports:
         - "8080:80"
     networks: 
@@ -26,7 +26,7 @@ services:
       MYSQL_USER: MYSQL_USER
       MYSQL_PASSWORD: MYSQL_PASSWORD
     ports:
-      - "9906:3306"
+      - "3306:3306"
     networks: 
       - mynet 
 
