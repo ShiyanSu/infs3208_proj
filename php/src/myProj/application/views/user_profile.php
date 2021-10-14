@@ -130,7 +130,7 @@
                         Edit Profile
                         <!-- <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"> -->
                         </a>
-                        <?php echo form_open_multipart('user_profile/upload_user_image'); ?> 
+                        <?php echo form_open_multipart('index.php/user_profile/upload_user_image'); ?> 
                         <div class="form-group">
                             <input type="file" name="user_image" size="20" value="Change image" /> 
                         </div>
