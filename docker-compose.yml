@@ -30,6 +30,16 @@ services:
     networks: 
       - mynet 
 
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+      ports:
+        - '9000'
+      restart: always
+      environment:
+        PMA_HOST: db
+      depends_on:
+        - db
+
 networks:
     mynet:
         driver: bridge
