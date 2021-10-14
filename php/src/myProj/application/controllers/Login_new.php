@@ -15,22 +15,23 @@ class login_new extends CI_Controller {
 
         $this->load->helper('url');
         $this->load->library('session');
-        $recaptchaResponse = trim($this->input->post('g-recaptcha-response'));
+        // $recaptchaResponse = trim($this->input->post('g-recaptcha-response'));
  
-        $userIp=$this->input->ip_address();
+        // $userIp=$this->input->ip_address();
      
-        $secret = $this->config->item('google_secret');
+        // $secret = $this->config->item('google_secret');
    
-        $url="https://www.google.com/recaptcha/api/siteverify?secret=".$secret."&response=".$recaptchaResponse."&remoteip=".$userIp;
+        // $url="https://www.google.com/recaptcha/api/siteverify?secret=".$secret."&response=".$recaptchaResponse."&remoteip=".$userIp;
  
-        $ch = curl_init(); 
-        curl_setopt($ch, CURLOPT_URL, $url); 
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
-        $output = curl_exec($ch); 
-        curl_close($ch);      
+        // $ch = curl_init(); 
+        // curl_setopt($ch, CURLOPT_URL, $url); 
+        // curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+        // $output = curl_exec($ch); 
+        // curl_close($ch);      
          
-        $status= json_decode($output, true);
+        // $status= json_decode($output, true);
  
+        $status['success'] = true;
         if ($status['success']) {
             // print_r('Google Recaptcha Successful');
             // exit;

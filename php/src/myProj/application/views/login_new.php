@@ -35,16 +35,12 @@
                   <input type="checkbox" class="custom-control-input" id="customCheck1" name="remember">
                   <label class="custom-control-label" for="customCheck1">Remember password</label>
                 </div>
-                <div class="g-recaptcha" data-sitekey="<?php echo $this->config->item('google_key') ?>"></div>
-                <br>
-                <div class="form-group">
-					          <?php echo $recaptcha; ?>
-					      </div>
+                
                 <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
                 <div class="text-center">
-                  <a class="small" href="<?php echo base_url(); ?>/index.php/forget_password">Forgot password?</a>
+                  <a class="small" href="<?php echo base_url(); ?>index.php/forget_password">Forgot password?</a>
                   <br>
-                  <a class="small" href="<?php echo base_url(); ?>/index.php/registration_new">Don't have an account? Create yours now.</a>
+                  <a class="small" href="<?php echo base_url(); ?>index.php/registration_new">Don't have an account? Create yours now.</a>
                 </div>
                  
               </form>
