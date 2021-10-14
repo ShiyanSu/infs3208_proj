@@ -3,16 +3,16 @@ version: '3.8'
 services: 
   php-apache-environment:
     build:
-        context: ./
-        dockerfile: Dockerfile.dockerfile
+        context: ./php
+        dockerfile: Dockerfile
     container_name: php-apache
     restart: always
     depends_on:
         - db
     volumes:
-        - ./infs3200proj:/var/www/html/proj
+        - ./php/src:/var/www/html/proj
     ports:
-        - "8080:80"
+        - "8000:80"
     networks: 
         - mynet 
 
