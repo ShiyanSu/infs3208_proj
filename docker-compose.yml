@@ -4,7 +4,7 @@ services:
   php-apache-environment:
     build:
         context: ./php
-        dockerfile: Dockerfile.dockerfile
+        dockerfile: Dockerfile
     container_name: php-apache
     restart: always
     depends_on:
