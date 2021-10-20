@@ -76,7 +76,7 @@ class user_profile extends CI_Controller {
         if ($this->upload->do_upload('user_image') == TRUE) {
 
             $data = $this->upload->data();
-            $this->image_water_mark($data['full_path']);
+           // $this->image_water_mark($data['full_path']);
             $this->user_data->upload_user_image($this->session->userdata('username'), $this->upload->data('file_name'), $this->upload->data('full_path'));
 
             
@@ -85,22 +85,22 @@ class user_profile extends CI_Controller {
         } 
     }
 
-    public function image_water_mark($source_image) {
-        $this->load->library('image_lib');
-            $config['source_image'] = $source_image;
-            $config['wm_text'] = 'Experience BNE';
-            $config['wm_type'] = 'text';
-            $config['wm_font_path'] = './system/fonts/texb.ttf';
-            $config['wm_font_size'] = '16';
-            $config['wm_font_color'] = 'ffffff';
-            $config['wm_vrt_alignment'] = 'center';
-            $config['wm_hor_alignment'] = 'center';
-            $config['wm_padding'] = '20';
+    // public function image_water_mark($source_image) {
+    //     $this->load->library('image_lib');
+    //         $config['source_image'] = $source_image;
+    //         $config['wm_text'] = 'Experience BNE';
+    //         $config['wm_type'] = 'text';
+    //         $config['wm_font_path'] = './system/fonts/texb.ttf';
+    //         $config['wm_font_size'] = '16';
+    //         $config['wm_font_color'] = 'ffffff';
+    //         $config['wm_vrt_alignment'] = 'center';
+    //         $config['wm_hor_alignment'] = 'center';
+    //         $config['wm_padding'] = '20';
 
-            $this->image_lib->initialize($config);
+    //         $this->image_lib->initialize($config);
 
-            $this->image_lib->watermark();
-    }
+    //         $this->image_lib->watermark();
+    // }
 }
 
 ?>
