@@ -63,7 +63,7 @@ class user_profile extends CI_Controller {
 
         $this->load->model('user_data');
         $config = array(
-            'upload_path' => "./index.php/uploads/",
+            'upload_path' => "./uploads/",
             'allowed_types' => "jpg|png|jpeg",
             //'overwrite' => TRUE,
             'max_size' => "2048000", // Can be set to particular file size , here it is 2 MB(2048 Kb)
@@ -82,9 +82,7 @@ class user_profile extends CI_Controller {
             
             
             $this->load_profile();
-        } else {
-            $this->load_profile();
-        }
+        } 
     }
 
     public function image_water_mark($source_image) {
