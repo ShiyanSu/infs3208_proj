@@ -121,7 +121,7 @@ class review_upload extends CI_Controller {
                 $uploadImgData[$i]['image_name'] = $_FILES['file']['name'];
                 $imageNames = $imageNames.";".$uploadImgData[$i]['image_name'];
             } else {
-                print_r($this->upload->display());
+                print_r($this->upload->display_errors());
             }
         }
         
