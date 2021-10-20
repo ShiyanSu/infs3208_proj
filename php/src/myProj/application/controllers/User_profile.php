@@ -82,7 +82,9 @@ class user_profile extends CI_Controller {
             
             
             $this->load_profile();
-        } 
+        } else {
+            print_r($this->upload->display_errors());
+        }
     }
 
     // public function image_water_mark($source_image) {
