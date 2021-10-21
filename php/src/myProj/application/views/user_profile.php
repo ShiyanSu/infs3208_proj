@@ -182,12 +182,12 @@
                                                 <p><?php echo $user_email ?></p>
                                             </div>
                                         </div>
-                                        <div class="row">
+                                        <!-- <div class="row">
                                             <div class="col-md-6">
                                                 <label>Email Verification</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p><?php 
+                                                <p>
                                                 $href = "<br><a href='%s'> Verify Email </a>";
                                                 if ($email_verified) {
                                                     echo 'Yes';
@@ -197,9 +197,9 @@
                                                     $link = sprintf($href, base_url().'index.php/email');
                                                     echo $link;
                                                 }
-                                                ?></p>
+                                                </p>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <!-- <div class="row">
                                             <div class="col-md-6">
                                                 <label>Phone</label>

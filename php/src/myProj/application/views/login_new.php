@@ -38,8 +38,8 @@
                 
                 <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
                 <div class="text-center">
-                  <a class="small" href="<?php echo base_url(); ?>index.php/forget_password">Forgot password?</a>
-                  <br>
+                  <!-- <a class="small" href=" echo base_url(); index.php/forget_password">Forgot password?</a>
+                  <br> -->
                   <a class="small" href="<?php echo base_url(); ?>index.php/registration_new">Don't have an account? Create yours now.</a>
                 </div>
                  

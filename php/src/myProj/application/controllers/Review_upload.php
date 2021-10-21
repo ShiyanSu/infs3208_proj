@@ -120,6 +120,8 @@ class review_upload extends CI_Controller {
             if ($this->upload->do_upload('file')) {
                 $uploadImgData[$i]['image_name'] = $_FILES['file']['name'];
                 $imageNames = $imageNames.";".$uploadImgData[$i]['image_name'];
+            } else {
+                print_r($this->upload->display_errors());
             }
         }
         
