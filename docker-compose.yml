@@ -10,8 +10,7 @@ services:
     depends_on:
         - db
     volumes:
-        - ./php/src/myProj/:/var/www/html/
-    command: chmod -R 777 /var/www/html/
+        - ./php/src/myProj/:/var/www/html/:rw
     ports:
         - "80:80"
     networks: 
