@@ -11,6 +11,7 @@ services:
         - db
     volumes:
         - ./php/src/myProj/:/var/www/html/
+    command: chmod -R 777 /var/www/html/
     ports:
         - "80:80"
     networks: 
@@ -21,29 +22,29 @@ services:
     container_name: db
     restart: always
     environment: 
-      MYSQL_ROOT_PASSWORD: MYSQL_ROOT_PASSWORD
-      MYSQL_DATABASE: MY_DATABASE
-      MYSQL_USER: MYSQL_USER
-      MYSQL_PASSWORD: MYSQL_PASSWORD
+        MYSQL_ROOT_PASSWORD: MYSQL_ROOT_PASSWORD
+        MYSQL_DATABASE: MY_DATABASE
+        MYSQL_USER: MYSQL_USER
+        MYSQL_PASSWORD: MYSQL_PASSWORD
     volumes: 
-      - ./myProj.sql:/docker-entrypoint-initdb.d/myProj.sql
+        - ./myProj.sql:/docker-entrypoint-initdb.d/myProj.sql
     ports:
-      - "3306:3306"
+        - "3306:3306"
     networks: 
-      - mynet 
+        - mynet 
 
   phpMyAdmin:
     depends_on:
-      - db
+        - db
     image: phpmyadmin/phpmyadmin
     container_name: phpMyAdmin
     restart: always
     ports: 
-      - "8082:80"
+        - "8082:80"
     environment: 
-      PMA_HOST: db
+        PMA_HOST: db
     networks: 
-      - mynet   
+        - mynet   
 
 networks:
     mynet:
