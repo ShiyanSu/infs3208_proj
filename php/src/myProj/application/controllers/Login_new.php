@@ -198,7 +198,7 @@ class login_new extends CI_Controller {
 
     public function logout() {
         $this->session->unset_userdata('logged_in');
-        redirect('login_new');
+        redirect('index.php/login_new');
     }
 
     public function auto_logout() {
