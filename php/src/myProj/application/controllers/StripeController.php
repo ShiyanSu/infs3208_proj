@@ -36,7 +36,7 @@ class stripeController extends CI_Controller {
         \Stripe\Stripe::setApiKey($this->config->item('stripe_secret'));
      
         \Stripe\Charge::create ([
-                "amount" => 100 * 100,
+                "amount" => 10 * 100,
                 "currency" => "usd",
                 "source" => $this->input->post('stripeToken'),
                 "description" => "Test payment from itsolutionstuff.com." 
@@ -44,6 +44,6 @@ class stripeController extends CI_Controller {
             
         $this->session->set_flashdata('success', 'Payment made successfully.');
              
-        redirect('/my-stripe', 'refresh');
+        redirect('index.php/my-stripe', 'refresh');
     }
 }

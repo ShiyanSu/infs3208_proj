@@ -15,7 +15,7 @@
      
 <div class="container">
      
-    <h1>Donate for us here!</h1>
+    <h1>Donate here!</h1>
      
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
@@ -84,7 +84,7 @@
       
                         <div class="row">
                             <div class="col-xs-12">
-                                <button class="btn btn-primary btn-lg btn-block" type="submit">Donate Now ($100)</button>
+                                <button class="btn btn-primary btn-lg btn-block" type="submit">Donate Now ($10)</button>
                             </div>
                         </div>
 
